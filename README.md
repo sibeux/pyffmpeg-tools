@@ -31,12 +31,12 @@ Pastikan kamu telah menginstal **FFmpeg** dan **Python**.
 Contoh pemakaian untuk **trim video**:
 
 ```python
-    # Masukkan directory path input dan output video,
-    # lalu masukkan jumlah part yang diinginkan.
+# Masukkan directory path input dan output video,
+# lalu masukkan jumlah part yang diinginkan.
 
-    file_path = r"C:\Users\Nasrul Wahabi\Downloads\video.mp4".strip()
-    output_dir = r"C:\Users\Nasrul Wahabi\Downloads".strip()
-    num_parts = 2
+file_path = r"C:\Users\Nasrul Wahabi\Downloads\video.mp4".strip()
+output_dir = r"C:\Users\Nasrul Wahabi\Downloads".strip()
+num_parts = 2
 ```
 
 ---
