@@ -69,8 +69,8 @@ def split_video(file_path, output_dir, num_parts):
 
 # Input pengguna
 if __name__ == "__main__":
-    file_path = r"C:\Users\Nasrul Wahabi\Downloads\Compressed\Orochimaru\Orochimaru.mp4".strip()
-    output_dir = r"C:\Users\Nasrul Wahabi\Downloads\Compressed\Orochimaru".strip()
-    num_parts = 2
+    file_path = r"C:\Users\Nasrul Wahabi\Downloads\Compressed\A-19\A-19.mp4".strip()
+    output_dir = r"C:\Users\Nasrul Wahabi\Downloads\Compressed\A-19".strip()
+    num_parts = 3
     
     split_video(file_path, output_dir, num_parts)
