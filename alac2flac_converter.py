@@ -2,6 +2,8 @@ import os
 import subprocess
 
 # Ganti ini ke path folder (atau pakai os.getcwd() untuk folder saat ini)
+# Contoh inputan:
+# "C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\The Divine Order - Single\flac"
 input_path = str(input("Place your path here: "))
 input_path = input_path.replace("\"", "")
 folder_path = rf"{input_path}"

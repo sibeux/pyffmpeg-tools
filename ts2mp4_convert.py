@@ -1,4 +1,3 @@
-import os
 import subprocess
 
 def convert_video(input_file, output_file):
