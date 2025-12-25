@@ -1,8 +1,10 @@
 import os
 import subprocess
 
-# Ganti ini ke path folder kamu (atau pakai os.getcwd() untuk folder saat ini)
-folder_path = r"C:\Users\Nasrul Wahabi\Downloads\Compressed\KONOSUBA-OST\flac"
+# Ganti ini ke path folder (atau pakai os.getcwd() untuk folder saat ini)
+input_path = str(input("Place your path here: "))
+input_path = input_path.replace("\"", "")
+folder_path = rf"{input_path}"
 
 # Loop semua file dalam folder
 for filename in os.listdir(folder_path):

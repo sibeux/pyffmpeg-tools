@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import subprocess
 
 
@@ -29,7 +30,6 @@ def get_video_duration(file_path):
 def split_video(file_path, output_dir, num_parts):
     """
     Membagi video menjadi beberapa bagian dengan durasi sama.
-
     Parameters yang dipakai:
         file_path (str): Path file video input.
         output_dir (str): Direktori output untuk file hasil potongan.
@@ -46,7 +46,6 @@ def split_video(file_path, output_dir, num_parts):
     # Buat direktori output jika belum ada
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-
     print("Membagi video menjadi beberapa bagian...")
 
     # Dapatkan durasi video
@@ -67,14 +66,16 @@ def split_video(file_path, output_dir, num_parts):
             output_file
         ])
         print(f"Bagian {i+1} selesai: {output_file}")
-
     print("Semua bagian selesai diproses.")
 
 
+# Ganti ini ke path folder (atau pakai os.getcwd() untuk folder saat ini)
+input_path = str(input("Place your path here: "))
+num_parts = int(input("How many parts do you want to split into? "))
+input_path = input_path.replace("\"", "")
+file_path = rf"{input_path}"
+
 # Input pengguna
 if __name__ == "__main__":
-    file_path = r"C:\Users\Nasrul Wahabi\Documents\XuanZhi9\Pictures\Telegram\SIBEUX-SIBEUI\SIBEUX\A-37\A-37.mp4".strip()
-    output_dir = r"C:\Users\Nasrul Wahabi\Documents\XuanZhi9\Pictures\Telegram\SIBEUX-SIBEUI\SIBEUX\A-37".strip()
-    num_parts = 5
-
+    output_dir = Path(file_path).parent
     split_video(file_path, output_dir, num_parts)
