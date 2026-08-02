@@ -13,7 +13,7 @@ target_ext = "opus"
 lossless_extensions = (".flac", ".wav", ".m4a")
 
 # Buat folder output supaya file asli tidak tertumpuk
-output_folder = os.path.join(folder_path, "converted_lossy")
+output_folder = os.path.join(folder_path, "flac")
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 
